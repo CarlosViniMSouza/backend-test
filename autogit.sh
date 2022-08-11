@@ -1,4 +1,4 @@
 git add .
-git commit -m "script.py -> added principal functions"
+git commit -m "lets go university"
 git push
 git status

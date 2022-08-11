@@ -1,0 +1,48 @@
+{
+    "editor.fontSize": 18,
+    "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.wordWrap": "on",
+    "explorer.compactFolders": false,
+    "terminal.integrated.fontSize": 16,
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true,
+    "editor.suggestSelection": "first",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "extensions.ignoreRecommendations": true,
+    "workbench.startupEditor": "none",
+    "workbench.colorTheme": "Atom One Dark",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "git.confirmSync": false,
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "window.zoomLevel": 1,
+}
