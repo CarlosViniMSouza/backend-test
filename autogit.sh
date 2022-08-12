@@ -1,4 +1,4 @@
 git add .
-git commit -m "models.py -> ok | Error: Failed to load API definition."
+git commit -m "NOTE: I'll stop here ... I dont know what to do! Sorry."
 git push
 git status

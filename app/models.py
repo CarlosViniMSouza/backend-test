@@ -28,7 +28,7 @@ class Investor(BaseModel):
 
 
 """
-dataExample = {
+{
     "proprietor": "Carlos Souza",
     "investiment": {
         "name": "Brazil Bank",
