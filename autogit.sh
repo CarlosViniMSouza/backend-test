@@ -1,4 +1,4 @@
 git add .
-git commit -m "lets go university"
+git commit -m "think how to config the API Model"
 git push
 git status

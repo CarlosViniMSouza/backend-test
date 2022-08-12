@@ -1,27 +1,8 @@
-from datetime import date, datetime
 from fastapi import FastAPI
-from pydantic import BaseModel
+from models import Investor
 
 
 app = FastAPI()
-
-
-# our user
-class Investor(BaseModel):
-    name: str
-    capital: float
-    data_initial: str = datetime.now()
-    data_end: str = date(2023, 1, 1)
-    amount: float
-
-
-fakeDatas = {
-    "name": "Carlos",
-    "capital": 1000.5,
-    "data_initial": "2021-01-01",
-    "data_end": "2022-11-11",
-    "amount": 1520.76
-}
 
 
 # for start-up application
@@ -49,13 +30,3 @@ async def withdrawal(user: Investor):
 @app.get("list/{name}")
 async def pagination(user: Investor):
     return user
-
-# others functions necessary
-
-
-def gainCalculation():
-    pass
-
-
-def taxation():
-    pass
