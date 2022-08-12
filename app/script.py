@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from models import Investor
+from app.models import Investor
 
 
 app = FastAPI()
@@ -24,9 +24,15 @@ async def view(user: Investor):
 
 @app.get("withdrawal/{name}")
 async def withdrawal(user: Investor):
-    return user
+    name = user.proprietor
+
+    while user.proprietor == name:
+        return user
 
 
 @app.get("list/{name}")
 async def pagination(user: Investor):
-    return user
+    name: user.proprietor
+
+    while user.proprietor == name:
+        return user
